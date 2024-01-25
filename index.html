@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Memoir</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="section">
+    <div class="title-header-section">
+        <div class="wrapper">
+            <h1 class="title-text">My Memoir:  Pages of Personal Growth</h1>
+            <div class="alert"> Your entry is saved successfully!</div>
+        </div>
+    </div>
+
+    <div class="hero-main-section" >
+        <div class="wrapper-hero-section">
+            <div class="first-section">
+                <form id="myForm">
+                    <div class="entry-no-content">
+                        <p>ENTRY NO:</p>
+                        <input type="text" class="entry-input" id="ent_num">
+                      
+                        <p>DATE:</p>
+                        <input type="text" class="date-input" id="date">
+                    </div>
+                </div>
+                <div class="title-section">
+                    <p>TITLE:</p>
+                    <input type="text" class="title-input" id="title">
+                </div>
+                <div class="content-section">
+                    <p>CONTENT: </p>    
+                    <textarea class="content-input" id="msgContent" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="btn-section">
+                    <button class="submit-btn" id="sub_btn" type="submit">SUBMIT</button>
+                </div>
+            </form>
+    </div> <!-- end of wrapper hero main -->
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./back.js"></script>
+
+</body>
+</html>
