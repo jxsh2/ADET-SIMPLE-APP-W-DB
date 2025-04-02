@@ -1,4 +1,4 @@
-# A Diary Website (Firebase)
+# A Diary Website
 
 *Description: This website was created for a school homework to demonstrate a successful application of database in a website.* 
 
