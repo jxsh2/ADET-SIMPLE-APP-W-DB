@@ -1,5 +1,8 @@
 # A Diary Website 
 
-This website was created for a school homework to demonstrate a successful application of database in a website. The website was created using HTML, JavaScript and CSS.
+*Description: This website was created for a school homework to demonstrate a successful application of database in a website.* 
 
-Click this link to visit the web: https://jxsh2.github.io/ADET-SIMPLE-APP-W-DB/
+🛠️ This website was built using HTML, JavaScript and CSS.
+
+---
+🌐 Live Demo: https://jxsh2.github.io/ADET-SIMPLE-APP-W-DB/
