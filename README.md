@@ -1,6 +1,6 @@
 # A Diary Website
 
-*Description: This website was created for a school homework to demonstrate a successful application of database in a website.*
+*Description: This website was created for a school assignment to demonstrate the integration of a database in a web application.*
 
 **🌐 Live Demo: https://jxsh2.github.io/ADET-SIMPLE-APP-W-DB**
 
