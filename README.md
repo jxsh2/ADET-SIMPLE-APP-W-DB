@@ -2,7 +2,7 @@
 
 *Description: This website was created for a school assignment to demonstrate the integration of a database in a web application.*
 
-**🌐 Live Demo: https://jxsh2.github.io/ADET-SIMPLE-APP-W-DB**
+**[🌐 Live Demo](https://jxsh2.github.io/My-Memoir)**
 
 **🛠️ Tech Used:**
 
