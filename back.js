@@ -24,19 +24,26 @@ function submitForm(e) {
   var title = getElementVal("title");
   var content = getElementVal("msgContent");
 
-  console.log(entries, date, title, content);
-
+  // Check if any field is empty
+  if (!entries || !date || !title || !content) {
+    alert("Please fill out all fields.");
+    return;
+  } else if (isNaN(entries) || !Number.isInteger(Number(entries))) {
+    alert("Entry number must be an integer/number.");
+    return;
+  }
+  // Save to Firebase
   saveMessages(entries, date, title, content);
 
-  // show alert msg
+  // Show alert message
   document.querySelector(".alert").style.display = "block";
 
-  // remove alert
+  // Hide alert after 700ms
   setTimeout(() => {
     document.querySelector(".alert").style.display = "none";
   }, 700);
 
-  // reset the whole form
+  // Reset form
   document.getElementById("myForm").reset();
 }
 
