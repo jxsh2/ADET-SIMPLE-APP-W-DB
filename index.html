@@ -8,46 +8,48 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="alert"> Your entry is saved successfully!</div>
 <div class="section">
-    <div class="title-header-section">
-        <div class="wrapper">
-            <h1 class="title-text">My Memoir:  Pages of Personal Growth</h1>
+    <div class="whole-cont">
+        <div class="title-header-section">
+            <div class="wrapper">
+                <h1 class="title-text">My Memoir:  Pages of Personal Growth</h1>
+            </div>
         </div>
-    </div>
 
-    <div class="hero-main-section" >
-        <div class="wrapper-hero-section">
-            <div class="first-section">
-                <form id="myForm">
-                    <div class="entry-no-content">
-                        <p>ENTRY NO:</p>
-                        <input type="text" class="entry-input" id="ent_num" placeholder="#1">
-                      
-                        <p>DATE:</p>
-                        <input type="date" class="date-input" id="date" placeholder="What day is it?">
+        <div class="hero-main-section" >
+            <div class="wrapper-hero-section">
+                <div class="first-section">
+                    <form id="myForm">
+                        <div class="entry-no-content">
+                            <p>ENTRY NO:</p>
+                            <input type="text" class="entry-input" id="ent_num" placeholder="#1">
+                        
+                            <p>DATE:</p>
+                            <input type="date" class="date-input" id="date" placeholder="What day is it?">
+                        </div>
                     </div>
-                </div>
-                <div class="title-section">
-                    <p>TITLE:</p>
-                    <input type="text" class="title-input" id="title" placeholder="Your title here...">
-                </div>
-                <div class="content-section">
-                    <p>CONTENT: </p>    
-                    <textarea class="content-input" id="msgContent" cols="30" rows="10" placeholder="Message here..."></textarea>
-                </div>
+                    <div class="title-section">
+                        <p>TITLE:</p>
+                        <input type="text" class="title-input" id="title" placeholder="Your title here...">
+                    </div>
+                    <div class="content-section">
+                        <p>CONTENT: </p>    
+                        <textarea class="content-input" id="msgContent" cols="30" rows="10" placeholder="Message here..."></textarea>
+                    </div>
 
-                <div class="btn-section">
-                    <button class="submit-btn" id="sub_btn" type="submit">SUBMIT</button>
-                </div>
-            </form>
-    </div> <!-- end of wrapper hero main -->
+                    <div class="btn-section">
+                        <button class="submit-btn" id="sub_btn" type="submit">SUBMIT</button>
+                    </div>
+                </form>
+        </div> 
+    </div>
 </div>
-</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="./back.js"></script>

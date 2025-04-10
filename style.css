@@ -1,16 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Secular+One&family=Shadows+Into+Light+Two&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Secular+One&family=Shadows+Into+Light+Two&family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
 body {
-  background-color: #93bfcf;
-  font-family: "Shadows Into Light Two", cursive;
-  align-items: center;
+  background-color: #102e50;
+  font-family: "Lora", serif;
+  margin: 0;
 }
 
-input {
-  background-color: #ececec;
-  border: 2px solid black;
-  border-radius: 0.5rem;
+input,
+textarea {
+  font-size: 0.8rem;
+  font-family: "Secular One", sans-serif;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  color: #292930;
+  width: 100%;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Hover & focus effects for input and textarea */
+input:hover,
+textarea:hover {
+  border-color: #888;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3a7bd5;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(58, 123, 213, 0.1);
 }
 
 p {
@@ -18,10 +39,17 @@ p {
   padding: 0.5rem;
 }
 
+.whole-cont {
+  background-color: #be3d2a;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
 .title-header-section {
   display: flex;
   justify-content: center;
-  background-color: #eee9da;
+  background-color: #f5c45e;
   border-radius: 1rem;
   width: 680px;
   align-items: center;
@@ -29,10 +57,9 @@ p {
 
 .section {
   width: 700px;
+  min-height: 100vh;
   margin: auto;
   padding: 1rem;
-  /* border: 1px solid red; */
-  background-color: orange;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -44,14 +71,12 @@ p {
   font-size: 2rem;
 }
 
-/* hero main section */
-
 .wrapper-hero-section {
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem;
 }
 
 .hero-main-section {
-  background-color: #eee9da;
+  background-color: #f5c45e;
   margin-top: 0.5rem;
   border-radius: 1rem;
 }
@@ -71,19 +96,15 @@ p {
 .entry-input {
   width: 40px;
   height: 10px;
-  font-size: 1rem;
-  padding: 1rem;
 }
 
 .date-input {
   width: 120px;
   height: 10px;
-  font-size: 1rem;
-  padding: 1rem;
 }
 
 .input-space {
-  margin-top: 10px; /* Adjust the value as needed */
+  margin-top: 10px;
 }
 
 .title-section {
@@ -97,27 +118,20 @@ p {
 .title-input {
   width: 500px;
   height: 10px;
-  font-size: 1rem;
-  padding: 1rem;
-
-  color: #292930;
 }
 
 .content-input {
   width: 500px;
   height: 200px;
-  font-family: "Roboto";
-  color: #292930;
-  padding: 1rem;
   display: flex;
   justify-content: center;
-  font-size: 1rem;
 }
 
 .content-section {
   display: flex;
   justify-content: center;
 }
+
 .btn-section {
   display: flex;
   justify-content: center;
@@ -127,45 +141,41 @@ p {
 }
 
 button {
-  font-family: "Secular One", sans-serif;
-  background-color: #6096b4;
+  background-color: #102e50;
   height: 50px;
   width: 170px;
+  font-family: "Lora", serif;
   border-radius: 1rem;
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
   margin: 1rem;
+  border: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-input {
-  font-size: 2rem;
-  font-family: "Roboto";
-  display: flex;
-  padding-left: 1rem;
-  color: #292930;
+button:hover {
+  background-color: #1a3e6e;
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-textarea {
-  font-size: 2rem;
-  font-family: "Secular One", sans-serif;
-  border: 2px solid black;
-  background-color: #ececec;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  resize: none;
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .alert {
   width: 20rem;
   background: rgb(0, 255, 106);
-  padding: 1rem 1rem;
+  padding: 1rem;
   border-radius: 2rem;
   font-family: "Secular One", sans-serif;
   font-size: 1rem;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 0.5rem;
-  justify-content: left;
+  margin: 0 auto 0.5rem;
   display: none;
 }
